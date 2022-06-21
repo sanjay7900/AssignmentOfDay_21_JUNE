@@ -100,6 +100,7 @@ namespace EmployeeAndOrgainizations
             {
                 updateemp.Name = empname;
                 updateemp.EmployeesOrganizations = UpdateList;
+                DbContextFile.Employees.Update(updateemp);
                 DbContextFile.SaveChanges();
             }
             else
